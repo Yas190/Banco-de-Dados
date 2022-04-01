@@ -33,3 +33,16 @@ FROM produtos;
 
 SELECT tp.codigo AS Código, tp.descricao AS Descrição
 FROM tipos_produtos AS tp;
+
+INSERT INTO produtos(descricao, preco, codigo_tipo) VALUES ('Notebook', 1200, 1);
+INSERT INTO produtos(descricao, preco, codigo_tipo) VALUES ('Macbook Pro', 7500, 3);
+
+INSERT INTO tipos_produtos(descricao) VALUES ('Apple');
+
+INSERT INTO produtos(descricao, preco, codigo_tipo) VALUES ('Macbook Air', 5200, 3);
+
+DELETE FROM produtos WHERE codigo = 7;
+DELETE FROM produtos WHERE codigo = 6;
+
+UPDATE produtos SET preco = 650 WHERE codigo = 4;
+
